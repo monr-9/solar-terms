@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" role="img" aria-label="水墨山水：远山、红日、小舟与飞鸟">
+  <defs>
+    <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f1e5"/>
+      <stop offset="1" stop-color="#fcf9f1"/>
+    </linearGradient>
+    <linearGradient id="heroFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d3ddcd"/>
+      <stop offset="1" stop-color="#e9ede1"/>
+    </linearGradient>
+    <linearGradient id="heroMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b0c3ab"/>
+      <stop offset="1" stop-color="#c2d0bc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="460" fill="url(#heroSky)"/>
+
+  <!-- 红日 -->
+  <circle cx="688" cy="112" r="82" fill="#cf5a45" opacity="0.10"/>
+  <circle cx="688" cy="112" r="50" fill="#cf5a45" opacity="0.88"/>
+
+  <!-- 云（缓慢漂移） -->
+  <g fill="#ffffff">
+    <g opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 18,0; 0,0" dur="18s" repeatCount="indefinite"/>
+      <ellipse cx="168" cy="126" rx="94" ry="15"/>
+      <ellipse cx="222" cy="110" rx="58" ry="11"/>
+      <ellipse cx="118" cy="112" rx="42" ry="9"/>
+    </g>
+    <g opacity="0.62">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -14,0; 0,0" dur="24s" repeatCount="indefinite"/>
+      <ellipse cx="626" cy="78" rx="74" ry="12"/>
+      <ellipse cx="672" cy="66" rx="42" ry="8"/>
+    </g>
+    <g opacity="0.55">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 12,0; 0,0" dur="30s" repeatCount="indefinite"/>
+      <ellipse cx="784" cy="164" rx="56" ry="9"/>
+    </g>
+  </g>
+
+  <!-- 远山 -->
+  <path d="M0 322 C 62 268 128 258 190 296 C 248 236 318 230 382 288 C 442 216 520 212 584 278 C 646 230 716 226 780 280 C 830 254 868 258 900 290 L900 460 L0 460 Z"
+        fill="url(#heroFar)"/>
+
+  <!-- 中山 -->
+  <path d="M0 376 C 88 328 168 324 250 358 C 330 306 420 302 500 350 C 580 314 670 310 760 354 C 818 332 868 338 900 360 L900 460 L0 460 Z"
+        fill="url(#heroMid)" opacity="0.94"/>
+
+  <!-- 山间薄雾 -->
+  <rect x="0" y="352" width="900" height="26" fill="#ffffff" opacity="0.42"/>
+
+  <!-- 近山 -->
+  <path d="M0 420 C 120 390 240 392 360 414 C 470 390 600 388 720 414 C 790 404 858 408 900 418 L900 460 L0 460 Z"
+        fill="#86a082"/>
+
+  <!-- 水面 -->
+  <path d="M0 438 L900 438 L900 460 L0 460 Z" fill="#b9cbb6" opacity="0.9"/>
+
+  <!-- 水波 -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <path d="M120 447 q 16 -5 32 0 q 16 5 32 0"/>
+    <path d="M360 452 q 14 -4 28 0 q 14 4 28 0"/>
+    <path d="M700 446 q 15 -5 30 0 q 15 5 30 0"/>
+  </g>
+
+  <!-- 小舟与渔翁 -->
+  <g fill="#6d7f6a">
+    <path d="M596 428 q 27 11 60 0 q -7 13 -30 13 q -23 0 -30 -13 z"/>
+    <path d="M624 406 q 6 0 6 9 l 0 9 l -12 0 l 0 -9 q 0 -9 6 -9 z" opacity="0.9"/>
+    <path d="M612 430 l 26 0 l -3 5 l -20 0 z" opacity="0.55"/>
+  </g>
+
+  <!-- 飞鸟 -->
+  <g stroke="#55574c" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M214 168 q 9 -9 18 0 q 9 -9 18 0"/>
+    <path d="M268 146 q 7 -7 14 0 q 7 -7 14 0"/>
+    <path d="M186 196 q 6 -6 12 0 q 6 -6 12 0"/>
+  </g>
+</svg>

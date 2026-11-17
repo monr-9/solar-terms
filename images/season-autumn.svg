@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320" role="img" aria-label="秋：银杏枝头与暖色山丘">
+  <defs>
+    <linearGradient id="autumnSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f9efdc"/>
+      <stop offset="1" stop-color="#f6e7cd"/>
+    </linearGradient>
+
+    <!-- 银杏叶 -->
+    <g id="ginkgo">
+      <path d="M0 0 C -15 -5 -23 -20 -14 -30 C -8 -36 8 -36 14 -30 C 23 -20 15 -5 0 0 Z"/>
+      <path d="M0 0 L0 13" stroke="#a97f33" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="480" height="320" fill="url(#autumnSky)"/>
+  <circle cx="382" cy="132" r="56" fill="#e0a15c" opacity="0.45"/>
+  <circle cx="382" cy="132" r="32" fill="#e0a15c" opacity="0.55"/>
+
+  <!-- 山丘 -->
+  <path d="M0 244 C 90 214 180 216 270 244 C 350 220 420 222 480 244 L480 320 L0 320 Z" fill="#e3cfa6"/>
+  <path d="M0 282 C 120 262 240 264 360 284 C 410 276 450 278 480 286 L480 320 L0 320 Z" fill="#cbb27f"/>
+
+  <!-- 枝条 -->
+  <path d="M-8 92 C 48 100 96 122 136 156 C 160 176 176 196 186 216"
+        stroke="#7a5a3d" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M98 124 C 106 148 118 168 130 184"
+        stroke="#7a5a3d" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M158 172 C 168 190 174 204 178 218"
+        stroke="#7a5a3d" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- 枝头银杏叶 -->
+  <g fill="#d9a441">
+    <g transform="translate(58 106) rotate(-22)"><use href="#ginkgo"/></g>
+    <g transform="translate(92 120) rotate(-6)"><use href="#ginkgo"/></g>
+    <g transform="translate(126 142) rotate(10)"><use href="#ginkgo"/></g>
+    <g transform="translate(154 168) rotate(24)"><use href="#ginkgo"/></g>
+    <g transform="translate(178 198) rotate(38)"><use href="#ginkgo"/></g>
+    <g transform="translate(196 222) rotate(50)"><use href="#ginkgo"/></g>
+    <g transform="translate(130 186) rotate(14)"><use href="#ginkgo"/></g>
+  </g>
+
+  <!-- 枝头银杏叶（深色） -->
+  <g fill="#c9862f">
+    <g transform="translate(44 118) rotate(-40)"><use href="#ginkgo"/></g>
+    <g transform="translate(78 132) rotate(-24)"><use href="#ginkgo"/></g>
+    <g transform="translate(110 152) rotate(-6)"><use href="#ginkgo"/></g>
+    <g transform="translate(142 180) rotate(12)"><use href="#ginkgo"/></g>
+    <g transform="translate(164 206) rotate(28)"><use href="#ginkgo"/></g>
+  </g>
+
+  <!-- 飘落的银杏叶 -->
+  <g fill="#e2b45a">
+    <g transform="translate(250 190) rotate(64) scale(0.9)"><use href="#ginkgo"/></g>
+    <g transform="translate(292 122) rotate(-46) scale(0.8)"><use href="#ginkgo"/></g>
+    <g transform="translate(342 236) rotate(28) scale(0.95)"><use href="#ginkgo"/></g>
+    <g transform="translate(400 180) rotate(82) scale(0.75)"><use href="#ginkgo"/></g>
+    <g transform="translate(432 250) rotate(-18) scale(0.85)"><use href="#ginkgo"/></g>
+    <g transform="translate(300 288) rotate(44) scale(0.7)"><use href="#ginkgo"/></g>
+  </g>
+</svg>

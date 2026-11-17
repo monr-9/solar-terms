@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于本站 · 二十四节气</title>
+  <meta name="description" content="关于本站：设计理念、素材说明，以及一个关于二十四节气的小测验。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="返回首页">
+        <span class="brand-seal" aria-hidden="true">节</span>
+        <span class="brand-text">二十四节气<small>中国人的时间美学</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="siteNav">☰</button>
+      <nav class="nav-links" id="siteNav">
+        <a href="index.html">首页</a>
+        <a href="terms.html">节气总览</a>
+        <a href="farming.html">节气农事</a>
+        <a href="customs.html">传统习俗</a>
+        <a href="food.html">节气食俗</a>
+        <a href="poetry.html">诗词雅集</a>
+        <a href="about.html" class="active">关于本站</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">关于</p>
+        <h1>一次关于时间的练习</h1>
+        <p class="lead">
+          这是一次重新认识二十四节气的机会。
+          做页面的过程里，也顺便把四季又过了一遍。
+        </p>
+        <div class="ornament" aria-hidden="true">❖</div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap narrow">
+
+        <div>
+          <div class="about-block reveal">
+            <p class="eyebrow">设计理念</p>
+            <h2>用留白，给时间让路</h2>
+            <p>
+              整站以宣纸色、墨色与朱砂色为基调，标题用宋体，正文用无衬线字体，
+              让文字有呼吸感。页面没有复杂的动效，只在滚动时轻轻浮现，
+              像翻一本纸质书。
+            </p>
+            <p>
+              首页与四季页使用手绘 SVG 插画：水墨山水、春夏秋冬四景，
+              矢量图形放大不糊、体积又小。食俗、诗词、习俗、农事与总览页的二十八张配图由 AI 生成，
+              再经人工挑选、裁切和调色，统一成水墨淡彩风格。
+            </p>
+          </div>
+
+          <div class="about-block reveal">
+            <p class="eyebrow">素材说明</p>
+            <h2>关于图片和文字</h2>
+            <p>
+              文字内容参考《月令七十二候集解》《二十四节气歌》及公开科普资料，
+              结合自己的理解整理撰写；插画为原创 SVG 与 AI 生成后人工整理的配图；
+              页面不使用第三方图片和网络字体，断网也能完整打开。
+            </p>
+            <p>
+              全站共 7 个页面，使用相对路径互相链接，
+              打开任意一页都能逛遍全站。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 小测验 ================= -->
+    <section class="section section-paper" id="quiz-section">
+      <div class="wrap narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">小测验</p>
+          <h2>你有多懂二十四节气？</h2>
+          <p class="lead">五道小题，点一点试试看。答错了也没关系，解释比答案更有意思。</p>
+        </div>
+
+        <div class="quiz" id="quiz">
+
+          <article class="quiz-q reveal">
+            <h3>1. 二十四节气中，白昼最长的是哪一个？</h3>
+            <div class="options">
+              <button class="option" type="button" data-correct="false">春分</button>
+              <button class="option" type="button" data-correct="true">夏至</button>
+              <button class="option" type="button" data-correct="false">秋分</button>
+              <button class="option" type="button" data-correct="false">冬至</button>
+            </div>
+            <p class="explain">夏至这天太阳直射北回归线，北半球白昼最长、日影最短。不过最热的时候通常还在后面——大暑。</p>
+          </article>
+
+          <article class="quiz-q reveal">
+            <h3>2. “清明时节雨纷纷”的下一句是？</h3>
+            <div class="options">
+              <button class="option" type="button" data-correct="true">路上行人欲断魂</button>
+              <button class="option" type="button" data-correct="false">牧童遥指杏花村</button>
+              <button class="option" type="button" data-correct="false">借问酒家何处有</button>
+              <button class="option" type="button" data-correct="false">春城无处不飞花</button>
+            </div>
+            <p class="explain">出自唐代杜牧的《清明》：“清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。”</p>
+          </article>
+
+          <article class="quiz-q reveal">
+            <h3>3. 冬至这天，北方人最常吃什么？</h3>
+            <div class="options">
+              <button class="option" type="button" data-correct="false">青团</button>
+              <button class="option" type="button" data-correct="true">饺子</button>
+              <button class="option" type="button" data-correct="false">春饼</button>
+              <button class="option" type="button" data-correct="false">凉面</button>
+            </div>
+            <p class="explain">“冬至不端饺子碗，冻掉耳朵没人管。”北方冬至吃饺子，南方则多吃汤圆，取团团圆圆之意。</p>
+          </article>
+
+          <article class="quiz-q reveal">
+            <h3>4. 二十四节气在哪一年入选联合国非遗名录？</h3>
+            <div class="options">
+              <button class="option" type="button" data-correct="false">2008 年</button>
+              <button class="option" type="button" data-correct="true">2016 年</button>
+              <button class="option" type="button" data-correct="false">2020 年</button>
+              <button class="option" type="button" data-correct="false">1998 年</button>
+            </div>
+            <p class="explain">2016 年 11 月 30 日，“二十四节气”被列入联合国教科文组织人类非物质文化遗产代表作名录。</p>
+          </article>
+
+          <article class="quiz-q reveal">
+            <h3>5. 一年中最热的节气通常是？</h3>
+            <div class="options">
+              <button class="option" type="button" data-correct="false">夏至</button>
+              <button class="option" type="button" data-correct="false">小暑</button>
+              <button class="option" type="button" data-correct="true">大暑</button>
+              <button class="option" type="button" data-correct="false">立秋</button>
+            </div>
+            <p class="explain">夏至白昼最长，但地面还在持续吸收热量，所以最热往往出现在大暑——“大暑”之名，名副其实。</p>
+          </article>
+
+        </div>
+
+        <div class="quiz-foot">
+          <p class="quiz-result" id="quizResult" aria-live="polite">答对 <strong>0</strong> / 5 题</p>
+          <button class="btn btn-ghost" type="button" id="quizReset">再挑战一次</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap narrow">
+        <div class="note-box reveal">
+          <strong>致谢：</strong>感谢古人留下的智慧，也感谢每一位认真读到这里的人。
+          如果你也喜欢二十四节气，欢迎把这个小小的站点分享给朋友——
+          毕竟，好季节值得被更多人看见。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-title">二十四节气</p>
+        <p class="footer-note">一岁四时，二十四章。愿你在节气里，读懂时间。</p>
+      </div>
+      <nav class="footer-links" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="terms.html">节气总览</a>
+        <a href="farming.html">节气农事</a>
+        <a href="customs.html">传统习俗</a>
+        <a href="food.html">节气食俗</a>
+        <a href="poetry.html">诗词雅集</a>
+        <a href="about.html">关于本站</a>
+      </nav>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© <span data-year>2026</span> 二十四节气 · 网页设计作品</p>
+      <p>纯手写 HTML / CSS / SVG · 无外部依赖</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

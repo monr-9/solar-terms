@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320" role="img" aria-label="春：柳枝、燕子和远山">
+  <defs>
+    <linearGradient id="springSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4e6"/>
+      <stop offset="1" stop-color="#f8fcef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" fill="url(#springSky)"/>
+  <circle cx="112" cy="86" r="58" fill="#f3e9c7" opacity="0.85"/>
+
+  <!-- 远山 -->
+  <path d="M0 236 C 70 200 150 200 220 230 C 290 202 370 202 480 236 L480 320 L0 320 Z" fill="#cfe0bd"/>
+  <path d="M0 268 C 100 246 200 248 300 270 C 380 252 440 254 480 268 L480 320 L0 320 Z" fill="#b7cf9f"/>
+
+  <!-- 柳枝 -->
+  <path d="M478 14 C 436 50 408 100 394 156 C 384 198 376 232 368 262"
+        stroke="#8a6b45" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M452 40 C 426 86 414 136 412 190 C 411 216 408 238 404 256"
+        stroke="#8a6b45" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M470 66 C 450 108 444 154 446 200"
+        stroke="#8a6b45" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- 柳叶（浅） -->
+  <g fill="#a4c286">
+    <ellipse cx="468" cy="36" rx="4.5" ry="10" transform="rotate(34 468 36)"/>
+    <ellipse cx="452" cy="56" rx="4.5" ry="10" transform="rotate(30 452 56)"/>
+    <ellipse cx="438" cy="80" rx="4.5" ry="10" transform="rotate(28 438 80)"/>
+    <ellipse cx="424" cy="106" rx="4.5" ry="10" transform="rotate(26 424 106)"/>
+    <ellipse cx="412" cy="130" rx="4.5" ry="10" transform="rotate(24 412 130)"/>
+    <ellipse cx="402" cy="156" rx="4.5" ry="10" transform="rotate(22 402 156)"/>
+    <ellipse cx="394" cy="182" rx="4.5" ry="10" transform="rotate(20 394 182)"/>
+    <ellipse cx="388" cy="208" rx="4.5" ry="10" transform="rotate(18 388 208)"/>
+    <ellipse cx="382" cy="234" rx="4.5" ry="10" transform="rotate(16 382 234)"/>
+    <ellipse cx="376" cy="258" rx="4.5" ry="10" transform="rotate(14 376 258)"/>
+    <ellipse cx="420" cy="90" rx="4" ry="9" transform="rotate(-30 420 90)"/>
+    <ellipse cx="414" cy="112" rx="4" ry="9" transform="rotate(-26 414 112)"/>
+    <ellipse cx="414" cy="134" rx="4" ry="9" transform="rotate(-22 414 134)"/>
+    <ellipse cx="412" cy="156" rx="4" ry="9" transform="rotate(-18 412 156)"/>
+    <ellipse cx="410" cy="178" rx="4" ry="9" transform="rotate(-14 410 178)"/>
+    <ellipse cx="408" cy="200" rx="4" ry="9" transform="rotate(-10 408 200)"/>
+    <ellipse cx="406" cy="222" rx="4" ry="9" transform="rotate(-6 406 222)"/>
+    <ellipse cx="404" cy="244" rx="4" ry="9" transform="rotate(-2 404 244)"/>
+    <ellipse cx="452" cy="96" rx="4" ry="9" transform="rotate(20 452 96)"/>
+    <ellipse cx="448" cy="120" rx="4" ry="9" transform="rotate(18 448 120)"/>
+    <ellipse cx="447" cy="144" rx="4" ry="9" transform="rotate(16 447 144)"/>
+    <ellipse cx="448" cy="168" rx="4" ry="9" transform="rotate(14 448 168)"/>
+    <ellipse cx="447" cy="192" rx="4" ry="9" transform="rotate(12 447 192)"/>
+  </g>
+
+  <!-- 柳叶（深） -->
+  <g fill="#8dae70">
+    <ellipse cx="446" cy="44" rx="4.5" ry="10" transform="rotate(-34 446 44)"/>
+    <ellipse cx="432" cy="66" rx="4.5" ry="10" transform="rotate(-30 432 66)"/>
+    <ellipse cx="418" cy="90" rx="4.5" ry="10" transform="rotate(-28 418 90)"/>
+    <ellipse cx="406" cy="114" rx="4.5" ry="10" transform="rotate(-26 406 114)"/>
+    <ellipse cx="396" cy="140" rx="4.5" ry="10" transform="rotate(-24 396 140)"/>
+    <ellipse cx="388" cy="166" rx="4.5" ry="10" transform="rotate(-22 388 166)"/>
+    <ellipse cx="382" cy="192" rx="4.5" ry="10" transform="rotate(-20 382 192)"/>
+    <ellipse cx="376" cy="218" rx="4.5" ry="10" transform="rotate(-18 376 218)"/>
+    <ellipse cx="370" cy="244" rx="4.5" ry="10" transform="rotate(-16 370 244)"/>
+  </g>
+
+  <!-- 燕子 -->
+  <g stroke="#4a5548" fill="none" stroke-width="3" stroke-linecap="round">
+    <path d="M118 122 q 11 -13 22 0 q 11 -13 22 0"/>
+    <path d="M178 156 q 8 -10 16 0 q 8 -10 16 0"/>
+  </g>
+
+  <!-- 飘落的花瓣 -->
+  <g fill="#e9b7bd" opacity="0.9">
+    <circle cx="252" cy="204" r="3"/>
+    <circle cx="290" cy="150" r="2.4"/>
+    <circle cx="330" cy="232" r="2.6"/>
+    <circle cx="216" cy="256" r="2.2"/>
+    <circle cx="356" cy="286" r="2.8"/>
+  </g>
+</svg>
