@@ -27,9 +27,17 @@ solar-terms-site/
 ├── poetry.html         诗词雅集
 ├── about.html          关于本站
 ├── css/
-│   └── style.css       全站样式（单文件）
+│   ├── base.css        变量、重置与基础排版
+│   ├── layout.css      顶部导航
+│   ├── components.css  按钮与通用元素
+│   ├── pages.css       首页、内页与页脚
+│   └── responsive.css  响应式断点
 ├── js/
-│   └── main.js         交互脚本（单文件）
+│   ├── nav.js          移动端导航
+│   ├── reveal.js       滚动入场
+│   ├── filter.js       四季筛选
+│   ├── quiz.js         小测验
+│   └── year.js         页脚年份
 ├── images/             6 张 SVG 图标插画 + 32 张 WebP 水墨配图
 └── README.md
 ```

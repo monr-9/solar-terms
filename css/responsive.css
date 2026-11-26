@@ -1,0 +1,93 @@
+/* ========================= 响应式 ========================= */
+@media (min-width: 761px) and (max-width: 1000px){
+  .nav-links{ gap:14px; }
+  .nav-links a{ font-size:13.5px; letter-spacing:.02em; }
+  .brand-text{ font-size:18px; }
+}
+
+@media (max-width: 1020px){
+  .hero-grid{ grid-template-columns:1fr; gap:44px; }
+  .hero .lead{ max-width:none; }
+  .season-grid{ grid-template-columns:repeat(2,1fr); }
+  .term-grid{ grid-template-columns:repeat(3,1fr); }
+  .feature-grid{ grid-template-columns:1fr; }
+  .food-grid{ grid-template-columns:repeat(2,1fr); }
+  .poem-grid{ grid-template-columns:1fr; }
+  .page-hero{ padding-top:56px; }
+}
+
+@media (max-width: 760px){
+  .wrap{ width:calc(100% - 36px); }
+  .section{ padding:64px 0; }
+
+  .nav{ min-height:68px; }
+  .nav-toggle{ display:block; }
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:100%; left:-18px; right:-18px;
+    flex-direction:column;
+    gap:0;
+    padding:8px 24px 18px;
+    background:rgba(247,242,231,.98);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 24px 30px -24px rgba(72,54,30,.5);
+  }
+  .nav-links.open{ display:flex; }
+  .nav-links a{
+    padding:13px 0;
+    border-bottom:1px dashed var(--line);
+    font-size:15px;
+  }
+  .nav-links a:last-child{ border-bottom:0; }
+  .nav-links a::after{ display:none; }
+
+  .hero{ padding:40px 0 44px; }
+  .hero h1{ font-size:clamp(40px,11vw,56px); }
+  .hero-stats{ gap:26px; }
+  .hero-stats strong{ font-size:26px; }
+  .hero-seal{ width:52px; height:52px; font-size:13px; top:-12px; right:-6px; }
+
+  .season-grid{ grid-template-columns:1fr; }
+  .season-art img{ height:150px; }
+  .custom-card.has-art{ grid-template-columns:1fr; gap:22px; }
+  .custom-art{ order:-1; }
+  .glossary-grid{ grid-template-columns:1fr 1fr; }
+  .food-grid{ grid-template-columns:1fr 1fr; gap:16px; }
+  .taste-grid{ grid-template-columns:1fr 1fr; }
+  .food-body{ padding:18px 14px 20px; }
+  .food-art img{ height:132px; }
+
+  .term-grid{ grid-template-columns:1fr 1fr; gap:12px; }
+  .term-card{ padding:18px 16px 20px; }
+  .term-card h3{ font-size:21px; }
+
+  .timeline{ padding-left:32px; }
+  .timeline::before{ left:6px; }
+  .timeline-dot{ left:-32px; top:30px; width:15px; height:15px; }
+  .custom-card{ padding:24px 22px 26px; }
+
+  .poem-body{ padding:24px 22px 26px; }
+  .poem-text{ font-size:15.5px; }
+  .poem-body::before{ font-size:90px; }
+  .poem-art img{ height:168px; }
+
+  .page-hero h1{ letter-spacing:.08em; }
+  .section-head{ margin-bottom:36px; }
+
+  .footer-grid{ gap:28px; }
+  .footer-bottom{ margin-top:30px; }
+}
+
+@media (max-width: 420px){
+  .food-grid{ grid-template-columns:1fr; }
+  .taste-grid{ grid-template-columns:1fr; }
+  .term-grid{ grid-template-columns:1fr; }
+  .glossary-grid{ grid-template-columns:1fr; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .js .reveal.reveal-armed{ opacity:1; transform:none; transition:none; }
+  *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; }
+}

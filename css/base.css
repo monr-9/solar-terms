@@ -1,0 +1,87 @@
+/* =========================================================
+   二十四节气 · 站点样式
+   纯手写 CSS，无第三方框架 / 无外部字体依赖
+   ========================================================= */
+
+:root{
+  --paper:      #f7f2e7;
+  --paper-2:    #fdfaf3;
+  --paper-3:    #f0e9da;
+  --ink:        #2b2823;
+  --ink-2:      #5f5a50;
+  --ink-3:      #8d8577;
+  --line:       #e0d6c2;
+  --red:        #b23a2f;
+  --red-deep:   #8e2b22;
+  --gold:       #c9a227;
+  --spring:     #7d9e6a;
+  --summer:     #bd6a52;
+  --autumn:     #bd8f41;
+  --winter:     #5a7d95;
+  --serif: "Songti SC","STSong","Noto Serif SC","Source Han Serif SC","SimSun",serif;
+  --sans:  "PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans SC",sans-serif;
+  --radius: 18px;
+  --shadow: 0 24px 50px -24px rgba(72,54,30,.32);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  margin:0;
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.8;
+  color:var(--ink);
+  background:
+    radial-gradient(900px 520px at 10% -6%, #fffdf6 0%, rgba(255,253,246,0) 62%),
+    radial-gradient(760px 420px at 96% 6%, #fdf5e6 0%, rgba(253,245,230,0) 58%),
+    var(--paper);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+::selection{ background:rgba(178,58,47,.16); }
+
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; }
+button{ font:inherit; }
+
+h1,h2,h3,h4{
+  font-family:var(--serif);
+  font-weight:600;
+  line-height:1.3;
+  letter-spacing:.02em;
+  margin:0;
+}
+p{ margin:0; }
+
+:focus-visible{
+  outline:2px solid var(--red);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+.wrap{ width:min(1120px, calc(100% - 48px)); margin-inline:auto; }
+.wrap.narrow{ width:min(880px, calc(100% - 48px)); }
+
+.section{ padding:90px 0; }
+.section-tight{ padding:56px 0; }
+
+.section-paper{
+  background:linear-gradient(180deg,
+    rgba(240,233,218,0) 0%,
+    var(--paper-3) 12%,
+    var(--paper-3) 88%,
+    rgba(240,233,218,0) 100%);
+}
+
+/* ---------- 入场动画（JS 开启后才隐藏，避免无 JS 时白屏） ---------- */
+.js .reveal.reveal-armed{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1);
+}
+.js .reveal.reveal-armed.is-visible{ opacity:1; transform:none; }
+
