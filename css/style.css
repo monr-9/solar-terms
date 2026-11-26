@@ -815,6 +815,39 @@ p{ margin:0; }
   color:var(--ink-2);
 }
 
+.food-intro{
+  max-width:780px;
+  margin:-18px 0 40px;
+}
+.food-intro p{
+  font-size:14.8px;
+  line-height:1.95;
+  color:var(--ink-2);
+}
+.food-intro p + p{ margin-top:12px; }
+
+.taste-section{ margin-top:64px; }
+.taste-section .section-head{ margin-bottom:28px; }
+.taste-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.taste-card{
+  padding:22px 20px 24px;
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:14px;
+}
+.taste-season{
+  display:block;
+  font-size:11.5px;
+  letter-spacing:.28em;
+  color:var(--red);
+}
+.taste-card h3{ font-size:20px; margin:8px 0 8px; }
+.taste-card p{ font-size:13.5px; line-height:1.9; color:var(--ink-2); }
+
 /* ========================= 诗词 ========================= */
 .poem-grid{
   display:grid;
@@ -1040,6 +1073,7 @@ p{ margin:0; }
   .custom-art{ order:-1; }
   .glossary-grid{ grid-template-columns:1fr 1fr; }
   .food-grid{ grid-template-columns:1fr 1fr; gap:16px; }
+  .taste-grid{ grid-template-columns:1fr 1fr; }
   .food-body{ padding:18px 14px 20px; }
   .food-art img{ height:132px; }
 
@@ -1066,6 +1100,7 @@ p{ margin:0; }
 
 @media (max-width: 420px){
   .food-grid{ grid-template-columns:1fr; }
+  .taste-grid{ grid-template-columns:1fr; }
   .term-grid{ grid-template-columns:1fr; }
   .glossary-grid{ grid-template-columns:1fr; }
 }
